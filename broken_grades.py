@@ -21,36 +21,36 @@
 
 exam_one = int(input("Input exam grade one: "))
 
-exam_two = input("Input exam grade two: "))
+exam_two = int(input("Input exam grade two: ")) # RR: adding the int data type
 
-exam_3 = str(input("Input exam grade three: "))
+exam_three= int(input("Input exam grade three: ")) # RR: changing the name from exam_3 to exam_three
+                                                # and str to int
 
-grades = [exam_one exam_two exam_three]
+grades = [exam_one, exam_two, exam_three] # RR: adding the ',' between each values
 sum = 0
-for grade in grade:
+for grade in grades: # RR: changing grade to grades
   sum = sum + grade
 
 avg = sum / len(grdes)
 
 if avg >= 90:
     letter_grade = "A"
-elif avg >= 80 and avg < 90
+elif avg >= 80 and avg < 90: # RR: adding the ':'
     letter_grade = "B"
 elif avg > 69 and avg < 80:
-    letter_grade = "C'
-elif avg <= 69 and avg >= 65:
+    letter_grade = "C" # RR: changing the quotes from ' to "
+elif avg <= 69 and avg >= 60: # RR: changing the value from 65 to 60
     letter_grade = "D"
-elif:
+else: # RR: changing elif to else
     letter_grade = "F"
 
-for grade in grades:
-    print("Exam: " + str(grade))
+print("Exam: " + (grades)) # RR: change grade to grades
 
-    print("Average: " + str(avg))
+print("Average: " + str(avg))
 
-    print("Grade: " + letter_grade)
-
-if letter-grade is "F":
-    print "Student is failing."
+print("Grade: " + letter_grade)
+# RR: removed the indentation for the print statements
+if letter_grade== "F": # RR: changing letter-grade to letter_grade and changing is to '=='
+    print("Student is failing.") # RR: adding the parenthesis
 else:
-    print "Student is passing."
+    print("Student is passing.") #RR: adding the parenthesis
